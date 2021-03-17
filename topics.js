@@ -16,7 +16,7 @@ function cb(err, response, html){
         let links = cheerioSelector(elem[i]).attr("href").trim();
         //console.log(topicName);
         let compURL = "https://github.com" + links;
-        //console.log(compURL);
+        console.log(compURL);
         repos.repositories(compURL);
     }
 }
